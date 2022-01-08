@@ -1,0 +1,31 @@
+Install Adguard
+
+A. Instalasi
+1) Download AdGuard Home untuk Linux Arm64
+cd $HOME
+wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_arm64.tar.gz
+
+2) Ekstrak
+tar xvf AdGuardHome_linux_arm64.tar.gz
+
+Setelah ekstrak akan muncul direktori baru bernama AdGuardHome.
+
+3) Instal
+cd AdGuardHome
+./AdGuardHome -s install
+
+Install Mikhmon
+
+1.) Install Curl
+apt install curl
+
+2.) Install Mikhmon
+
+curl -o install-mikhmon https://laksa19.github.io/install-mikhmon.txt
+
+
+chmod +x install-mikhmon
+
+./install-mikhmon
+
+Buka URL http://<alamat_ip>:8080

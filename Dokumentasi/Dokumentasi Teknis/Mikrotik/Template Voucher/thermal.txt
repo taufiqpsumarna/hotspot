@@ -1,0 +1,108 @@
+#thermal
+<?php
+if(substr($validity,-1) == "d"){
+  $validity = "   <br>Masa Aktif : ".substr($validity,0,-1)." Hari";
+}else if(substr($validity,-1) == "h"){
+  $validity = "Masa Aktif : ".substr($validity,0,-1)."Jam";
+}
+if(substr($timelimit,-1) == "d" & strlen($timelimit) >3){
+  $timelimit = "Durasi:".((substr($timelimit,0,-1)*7) +  substr($timelimit, 2,1))." Hari";
+}else if(substr($timelimit,-1) == "d"){
+  $timelimit = "Durasi:".substr($timelimit,0,-1)." Hari";
+}else if(substr($timelimit,-1) == "h"){
+  $timelimit = "Durasi:".substr($timelimit,0,-1)."Jam";
+}else if(substr($timelimit,-1) == "w"){
+  $timelimit = "Durasi:".(substr($timelimit,0,-1)*7)." Hari";
+}
+if($getprice == "3000"){ $color = "#EF4700";} 
+elseif($getprice == "5000"){ $color = "#09589A";}
+elseif($getprice == "6000"){ $color = "#E347BD";}
+elseif($getprice == "10000"){ $color = "#527AE4";}
+elseif($getprice == "12000"){ $color = "#FFC107";}
+elseif($getprice == "15000"){ $color = "#752CEB";}
+elseif($getprice == "18000"){ $color = "#00A361";}
+elseif($getprice == "25000"){ $color = "#FF6524";}
+elseif($getprice == "35000"){ $color = "#20A8D8";}
+elseif($getprice == "50000"){ $color = "#752CEB";}
+else{ $color = "#FF69B4";}?>  
+ <!--mks-mulai-->
+<table class="voucher" style="border: 3px <?php echo $color ?> solid; border-radius: 3px; text-align: center; font-size: 2px; font-weight:bold; ">
+<tbody>
+<tr>
+<td style="color:#666;" valign="top">
+<table style="width:100%;">
+<tbody>
+<tr>
+<td style="width:64px">
+<div style="position:relative;z-index:-1;padding: 0px;float:left;">
+<div style="position:absolute;top:0;display:inline;margin-top:-100px;width: 0; height: 0; border-top: 230px solid transparent;border-left: 50px solid transparent;border-right:0px solid #DCDCDC; "></div>
+ <!--mks-logo-->	
+</div>
+<img style="margin:1px 0 0 5px;" width=120 height="auto" src="<?php echo $logo;?>" alt="logo">
+</td>
+<!--mks-logo-akhir-->	
+<td style="width:100px">
+<div style="float:right;margin-top:-6px;margin-right:0px;width:5%;text-align:right;font-size:7px;">
+</div>
+<!--mks-price-->	
+<div style="text-align:right;font-weight:bold;font-family:Tahoma;font-size:16px;padding-left:17px;color:<?php echo $color ?>">
+<?= $price; ?>
+</div>	
+<!--mks-price-akhir-->		
+</tr>
+</tbody>
+</table>
+</td>
+<!--mks-voucher-->	
+<tr>
+<td style="color:#666;border-collapse: collapse;" valign="top">
+<table style="width:100%;border-collapse: collapse;">
+<tbody>
+<tr>
+<p style=" margin-top:-14px;margin-bottom:5px">	
+ <?php if ($usermode == "vc") { ?>
+<div style=" solid;text-align:center;font-weight:bold;font-size:12px;color:#333;">
+	<?= $username; ?></div>
+<?php 
+} elseif ($usermode == "up") { ?>
+<div style=" solid;text-align:center;font-weight:bold;font-size:12px;color:#555;">
+	<?= $username; ?> | <?= $password; ?></div>
+
+<!--mks-voucher-akhir-->	
+</td>	
+</td>
+	<?php }?>	
+<td style="width:100px;text-align:left;">
+<div style="clear:both;padding:0 2.5px;font-size:12px;font-weight:bold;color:#333">	
+<p style=" margin-top:-10px;margin-bottom:5px">	
+<?php echo $validity;?> <?php echo $timelimit;?> <?php echo $datalimit;?><br> 
+<?= $comment; ?>
+</td>
+	
+<!--mks-qr-mulai-->	
+<div style="padding:center;width:100%;margin:0 5px -20px 0;"><img style="border: 1px <?php echo $color ?> solid; border-radius: 3px; solid  #444;width:120px;height:120px;"  <?= $qrcode ?>
+</td>
+<!--mks-qr-akhir-->	
+<p style=" margin-top:15px;margin-bottom:5px">	
+
+</td>	
+</tr>
+
+<!--mks-cs-->	
+<tr>
+<td style=" background: #DCDCDC ;padding:0px;" valign="top" colspan="2">
+<div style="border: 1px <?php echo $color ?> solid; border-radius: 1px;text-align:left;color:#333;font-size:13px;font-weight:bold;margin:0px;padding:2.5px;">
+<b>hotspot.permanalink.net</b> <span id="num"><?php echo " [$num]";?>
+
+	</div>
+	
+<!--mks-cs-akhir-->	
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--mks-template-selesai-By-isber nendi-mks.net-->		        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        

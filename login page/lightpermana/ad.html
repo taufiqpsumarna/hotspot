@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title id="title"></title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default example6 navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed tombol-nav" data-toggle="collapse" data-target="#navbar6"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand text-hide" href="login.html">Brand Text </a> </div>
+            <div id="navbar6" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right ">
+                    <li><a href="login.html" class="tanpa-link">Home</a></li>
+					 <li><a href="faq.html" class="link-aktif">Help</a></li>
+					$(if logged-in=='yes') <li class="dropdown"> <a class="dropdown-toggle dodown" class="tanpa-link" data-toggle="dropdown" href="#">Status <span class="caret"></span></a>   
+						<ul class="dropdown-menu">
+                            <li><a href="status.html">Cek Masa Aktif</a></li>
+                            <li><a href="logout.html">Logout</a></li>
+                        </ul>
+                    </li>$(endif)
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 box-utama" style="padding:15px;">
+            <p style="font-size:24px; font-weight:600; text-align:center; color:#fff; margin-bottom: -5px;">Selamat Anda Telah Terkoneksi</p><br>
+            <p style="font-size:16px; text-align:center; color:#fff; margin-bottom: -2px; margin-top: 5 px;">
+            Kamu telah terhubung dengan layanan internet Permanalink.WiFi gratis, Mohon dipergunakan dengan cerdas dan bijak <br>
+            Terimakasih telah menggunakan layanan ini<br>
+            Segera beli voucher WiFi-nya, untuk akses internet dengan bebas.
+          </p>
+          <br>
+          <p style="font-size:24px; font-weight:600; text-align:center; color:#fff; margin-bottom: -5px;">Harga Voucher</p>     
+<br> 
+    <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Paket</th>
+      <th>Kecepatan</th>
+      <th>Kuota</th>
+      <th>Harga</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3 jam</th>
+      <td style="color:#ffff">1 Mbps</td>
+      <td style="color:#ffff">1,2 Gb</td>
+      <td style="color:#ffff">Rp.3.000</td>
+    </tr>
+     <tr>
+      <th>1 Hari</th>
+      <td style="color:#ffff">1 Mbps</td>
+      <td style="color:#ffff">5 Gb</td>
+      <td style="color:#ffff">Rp.5.000</td>
+    </tr>
+    <tr>
+      <th>7 Hari</th>
+      <td style="color:#ffff">1,2 Mbps</td>
+      <td style="color:#ffff">6 Gb</td>
+      <td style="color:#ffff">Rp.10.000</td>
+    </tr>
+     <tr>
+      <th>1 Bulan Mini</th>
+      <td style="color:#ffff">1 Mbps</td>
+      <td style="color:#ffff">10 Gb</td>
+      <td style="color:#ffff">Rp.25.000</td>
+    </tr>
+     <tr>
+      <th>1 Bulan Full </th>
+      <td style="color:#ffff">1,2 Mbps</td>
+      <td style="color:#ffff">15 Gb</td>
+      <td style="color:#ffff">Rp.35.000</td>
+    </tr>
+    <tr>
+      <th>1 Bulan Max</th>
+      <td style="color:#ffff">2 Mbps</td>
+      <td style="color:#ffff">30 Gb</td>
+      <td style="color:#ffff">Rp.50.000</td>
+    </tr>
+	<tr>
+      <th>1 Bulan Unlimited</th>
+      <td style="color:#ffff">2 Mbps</td>
+      <td style="color:#ffff">∞</td>
+      <td style="color:#ffff">Rp.100.000</td>
+    </tr>
+  </tbody>
+  
+</table>
+            <center> <img src="img/bw.png" class="img-responsive"> </center>
+        </div>
+  
+	</div>
+	
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modal.js"></script> $(if chap-id) <form name="sendin" action="$(link-login-only)" method="post"> <input type="hidden" name="username" /> <input type="hidden" name="password" /> <input type="hidden" name="dst" value="$(link-orig)" /> <input type="hidden" name="popup" value="true" /> </form>
+    <script type="text/javascript" src="md5.js"></script>
+    <script type="text/javascript">
+    function doLogin() { document.sendin.username.value = document.login.username.value;
+        document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+        document.sendin.submit(); return false; }
+    </script> $(endif) <style>
+    .blink {
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+
+    @keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+
+    @-webkit-keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+    </style>
+    
+ <script type="text/javascript">
+<!--
+document.login.username.focus();
+document.getElementById('title').innerHTML = window.location.hostname + "Login | $(identity)";
+
+// login page 2 mode by Laksamadi Guko
+var username = document.login.username;
+var password = document.login.password;
+var luser = document.getElementById("luser");
+var lpass = document.getElementById("lpass");
+var btnmem = document.getElementById("btnmem");
+var btnvcr = document.getElementById("btnvcr");
+
+// set password = username
+function setpass(){
+  var user = username.value		
+  password.value = user;
+}
+	
+username.onkeyup = setpass;
+	
+btnmem.style.backgroundColor = "#0c7cd5";
+btnvcr.style.backgroundColor = "#0c7cd5";  
+btnqr.style.backgroundColor = "#0c7cd5";  
+
+// change to voucher mode
+function voucher(){
+  username.focus();
+  username.onkeyup = setpass;
+  username.placeholder = "Voucher";
+  password.type = "hidden";
+  password.value = username.value;  
+  btnmem.style.backgroundColor = "#0275d8";
+  btnvcr.style.backgroundColor = "#4b545c";  
+}
+
+// change to member mode
+function member(){
+  username.focus();
+  username.onkeyup = "";
+  username.placeholder = "Username";
+  password.type= "Password";
+  password.value = "";
+  btnmem.style.backgroundColor = "#4b545c"; 
+  btnvcr.style.backgroundColor = "#0275d8"; 
+}
+
+//-->
+</script>
+   
+</body>
+
+</html>
